@@ -9,7 +9,7 @@ COPY requirements.txt /opt
 COPY hello.py /opt
 COPY flask.sh /opt
 #RUN pip3 install --upgrade pip
-RUN pip3 install -r /opt/requirements.txt
+RUN pip3 install -r /opt/requirements.txt --no-cache-dir
 
 WORKDIR /opt
 
