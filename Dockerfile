@@ -13,4 +13,5 @@ RUN pip3 install -r /opt/requirements.txt --no-cache-dir
 
 WORKDIR /opt
 
+EXPOSE 5000 
 CMD ["./flask.sh"]
